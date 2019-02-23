@@ -16,7 +16,7 @@ export const Provider = props => {
   const [selectedUser, setSelectedUser] = useState(initialSelectedUsers);
 
   const addNewUser = userName => {
-    let newUser = { id: new Date().getTime().toString(), name: userName };
+    const newUser = { id: new Date().getTime().toString(), name: userName };
     setUsers(users.concat([newUser]));
   };
 
