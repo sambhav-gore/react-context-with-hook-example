@@ -15,7 +15,7 @@ export const Provider = props => {
   const [users, setUsers] = useState(initialUsers);
   const [selectedUser, setSelectedUser] = useState(initialSelectedUsers);
 
-  // Make the context value:
+  // Make the context object:
   const usersContext = {
     users,
     setUsers,
@@ -23,6 +23,7 @@ export const Provider = props => {
     setSelectedUser
   };
 
+  // pass the value in provider and return
   return <Context.Provider value={usersContext}>{children}</Context.Provider>;
 };
 
