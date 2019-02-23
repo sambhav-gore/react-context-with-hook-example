@@ -15,12 +15,18 @@ export const Provider = props => {
   const [users, setUsers] = useState(initialUsers);
   const [selectedUser, setSelectedUser] = useState(initialSelectedUsers);
 
+  const addNewUser = userName => {
+    let newUser = { id: new Date().getTime().toString(), name: userName };
+    setUsers(users.concat([newUser]));
+  };
+
   // Make the context object:
   const usersContext = {
     users,
     setUsers,
     selectedUser,
-    setSelectedUser
+    setSelectedUser,
+    addNewUser
   };
 
   // pass the value in provider and return

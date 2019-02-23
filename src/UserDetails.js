@@ -18,7 +18,7 @@ const UserDetails = () => {
           </p>
         </>
       ) : (
-        <p>Please select a user</p>
+        <p>Please select a user in the list to see the details.</p>
       )}
     </div>
   );
