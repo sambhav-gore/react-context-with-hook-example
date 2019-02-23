@@ -1,0 +1,8 @@
+.app {
+  font-family: sans-serif;
+}
+
+.users-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
