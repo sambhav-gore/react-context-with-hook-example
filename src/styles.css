@@ -17,7 +17,8 @@
 }
 
 .user-item-selected {
-  background: pink;
+  background: forestgreen;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 input[type="text"] {

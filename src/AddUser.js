@@ -14,7 +14,12 @@ const AddUser = () => {
     <>
       <hr />
       <h3>Add new user:</h3>
-      <input type="text" value={userName} onChange={handleChange} />
+      <input
+        type="text"
+        value={userName}
+        onChange={handleChange}
+        placeholder="Enter name"
+      />
       <button
         className={clsx("add-btn", {
           disabled: !userName
